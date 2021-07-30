@@ -1,0 +1,19 @@
+.Anchor {
+	color: #FFF;
+}
+
+.Anchor:active, .Anchor:focus, .Anchor:hover {
+	color: #181818;
+}
+
+@media (max-width: 1200px) {
+	.Navigation {
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.Anchor {
+		margin-top: 1.5rem;
+	}
+}
