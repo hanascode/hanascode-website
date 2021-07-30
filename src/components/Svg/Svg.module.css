@@ -1,0 +1,15 @@
+.SVG {
+	width: 6rem;
+	height: 6rem;
+}
+
+.Path {
+	fill: currentColor;
+}
+
+@media (max-width: 1200px) {
+	.SVG {
+		width: 5rem;
+		height: 5rem;
+	}
+}
