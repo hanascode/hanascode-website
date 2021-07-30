@@ -1,0 +1,23 @@
+import Anchor from "../Anchor/Anchor.jsx";
+import Svg from "../Svg/Svg.jsx";
+import styles from "./Navigation.module.css";
+
+export const Navigation = ({ links = [], ...props}) => (
+	<nav class={styles.Navigation}>
+		{
+			links.map(({ logo, title, url }) => (
+				<Anchor
+					class={styles.Anchor}
+					href={url}
+					title={`Hanascode's ${title} profile`}
+					key={title}
+					{...props}
+				>
+					<Svg path={logo}/>
+				</Anchor>
+			))
+		}
+	</nav>
+);
+
+export default Navigation;
