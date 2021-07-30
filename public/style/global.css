@@ -5,8 +5,12 @@
 }
 
 html, body {
+	height: -moz-available;
+	height: -webkit-fill-available;
+	height: 100%;
+	height: stretch;
+	overscroll-behavior: none;
 	width: 100vw;
-	height: 100vh;
 }
 
 body {

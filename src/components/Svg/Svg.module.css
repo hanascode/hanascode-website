@@ -13,3 +13,10 @@
 		height: 5rem;
 	}
 }
+
+@media (max-width: 800px) {
+	.SVG {
+		width: 4rem;
+		height: 4rem;
+	}
+}
