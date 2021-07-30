@@ -9,6 +9,7 @@ export const Navigation = ({ links = [], ...props}) => (
 				<Anchor
 					class={styles.Anchor}
 					href={url}
+					aside={true}
 					title={`Hanascode's ${title} profile`}
 					key={title}
 					{...props}
