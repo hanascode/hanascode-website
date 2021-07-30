@@ -1,0 +1,32 @@
+---
+	import Anchor from "./Anchor/Anchor.js";
+	import Navigation from "./Navigation/Navigation.js";
+	import links from "../const/links.js";
+---
+
+<section class="section">
+	<img class="logo" src="/assets/logo.svg" alt="hanascode's logo"/>
+	<Navigation links={links}/>
+</section>
+
+<style>
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		width: 60vw;
+		margin-bottom: 1rem;
+		user-select: none;
+	}
+
+	@media (max-width: 800px) {
+		.logo {
+			width: 70vw;
+			margin: 0;
+		}
+	}
+</style>
