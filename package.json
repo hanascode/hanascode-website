@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "astro": "^0.18.4"
+  },
+  "dependencies": {
+    "@astrojs/renderer-preact": "^0.2.0"
   }
 }
