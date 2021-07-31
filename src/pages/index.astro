@@ -1,15 +1,58 @@
 ---
-import Home from '../components/Home.astro';
-let title = 'hanascode';
+import Home from "../components/Home.astro";
+const description = "Hana's Code";
+const title = "Hana's Code - @hanascode";
 ---
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="hanascode" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="hanascode,programming,web,development,company,brand,webdev" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" />
+		<meta name="theme-color" content="#F45C43" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- Tile icon for Windows 8 -->
+		<meta name="msapplication-TileImage" content="/assets/144.png">
+		<meta name="msapplication-TileColor" content="#F45C43">
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- Twitter stuff -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator:id" content="1372615709717528576">
+		<meta name="twitter:site:id" content="1419490076896088072">
 		<title>{title}</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<link rel="image_src" href="/assets/thumb.png" />
+		<link rel="manifest" href="manifest.webmanifest" />
+		<!-- Stylesheet -->
 		<link rel="stylesheet" href="/style/global.css">
 		<link rel="stylesheet" href="/style/index.css">
+		<!-- Add to home screen for Chrome on Android. Fallback for manifest.webmanifest -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="hanascode">
+		<!-- Add to home screen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="hanascode">
+		<!-- Home screen icons -->
+		<link rel="apple-touch-icon" href="/assets/thumb.png" />
+		<link rel="apple-touch-icon" sizes="48x48" href="/assets/48.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/72.png">
+		<link rel="apple-touch-icon" sizes="96x96" href="/assets/96.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/144.png">
+		<link rel="apple-touch-icon" sizes="192x192" href="/assets/192.png">
+		<!-- Open Graph (Facebook) stuff -->
+		<meta property="og:description" content={description}>
+		<meta property="og:image:alt" content="hanascode's logo">
+		<meta property="og:image:height" content="1080">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1920">
+		<meta property="og:image" content="/assets/thumb.png">
+		<meta property="og:site_name" content="hanascode">
+		<meta property="og:title" content="hanascode">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://hanascode.dev/">
 	</head>
 	<body>
 		<main>
