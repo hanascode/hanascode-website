@@ -1,0 +1,29 @@
+{
+	"short_name": "hanascode",
+	"name": "Hana's Code - @hanascode",
+	"icons": [
+		{
+			"src": "/assets/192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/assets/512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/assets/512.maskable.png",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#F45C43",
+	"background_color": "#F45C43",
+	"lang": "English",
+	"orientation": "any",
+	"description": "@hanascode's webpage"
+  }
