@@ -14,7 +14,7 @@ export const Navigation = ({ links = [], ...props}) => (
 					key={title}
 					{...props}
 				>
-					<Svg path={logo}/>
+					<Svg description={`${title}'s logo`} path={logo} title={title}/>
 				</Anchor>
 			))
 		}

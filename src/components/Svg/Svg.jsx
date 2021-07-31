@@ -1,14 +1,17 @@
 import styles from "./Svg.module.css";
 
-export const Svg = ({ path= "", ...props }) => (
+export const Svg = ({ description= "", path= "", title= "", ...props }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 64 64"
 		width="64pt"
 		height="64pt"
+		role="img"
 		class={styles.SVG}
 		{...props}
 	>
+		<title id="title">{title}</title>
+		<desc id="desc">{description}</desc>
 		<defs>
 			<clipPath id="_clipPath_FKx7hiv3dTxVnC3CffI68i7UlaH4l75p">
 				<rect width="64" height="64"/>
