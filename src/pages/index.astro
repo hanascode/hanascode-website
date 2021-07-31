@@ -53,6 +53,15 @@ const title = "Hana's Code - @hanascode";
 		<meta property="og:title" content="hanascode">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://hanascode.dev/">
+		<script type="text/javascript" src="/serviceWorker.js"></script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("serviceWorker.js")
+					.catch((err) => {
+						console.log("Service worker registration failed");
+					});
+			}
+		</script>
 	</head>
 	<body>
 		<main>
