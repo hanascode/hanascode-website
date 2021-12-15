@@ -2,10 +2,10 @@
   "name": "@example/starter",
   "version": "0.0.1",
   "dependencies": {
-    "@astrojs/renderer-preact": "^0.3.0"
+    "@astrojs/renderer-preact": "^0.3.2"
   },
   "devDependencies": {
-    "astro": "^0.21.0"
+    "astro": "^0.21.12"
   },
   "private": true,
   "scripts": {
