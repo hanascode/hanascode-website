@@ -1,15 +1,14 @@
-export default {
-  projectRoot: '.',
-  src: './src',
-  pages: './src/pages',
-  dist: './dist',
-  public: './public',
-  buildOptions: {
-    site: 'http://hanascode.dev',
-    sitemap: true,
-  },
-  devOptions: {
-    port: 3000,
-  },
-  renderers: [ "@astrojs/renderer-preact" ],
-};
+import preact from '@astrojs/preact';
+import { defineConfig } from 'astro/config'
+
+export default defineConfig({
+	root: '.',
+	srcDir: './src',
+	outDir: './dist',
+	publicDir: './public',
+	site: 'http://hanascode.dev',
+	server: {
+		port: 3000,
+	},
+	integrations: [ preact() ],
+});
