@@ -1,14 +1,17 @@
+import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
-import { defineConfig } from 'astro/config'
+import vercel from "@astrojs/vercel/edge";
 
 export default defineConfig({
-	root: '.',
-	srcDir: './src',
+	adapter: vercel(),
+	integrations: [ preact() ],
 	outDir: './dist',
+	output: 'server',
 	publicDir: './public',
-	site: 'http://hanascode.dev',
+	root: '.',
 	server: {
 		port: 3000,
 	},
-	integrations: [ preact() ],
+	site: 'http://hanascode.dev',
+	srcDir: './src',
 });

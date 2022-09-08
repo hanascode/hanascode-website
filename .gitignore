@@ -4,6 +4,7 @@ dist
 # dependencies
 node_modules/
 .snowpack/
+pnpm-lock.yaml
 
 # logs
 npm-debug.log*
